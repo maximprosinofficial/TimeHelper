@@ -21,7 +21,7 @@ public class TaskManager
         while (true)
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("\nВыберите действие: \n1. Добавить задачу \n2. Просмотреть текущие задачи \n3. Отметить задачу как выполненную \n4. Удалить задачу \n5. Посмотреть выполненные задачи \n6. Посмотреть удаленные задачи \n7. Выйти\n");
+            Console.WriteLine("\nВыберите действие: \n1. Добавить задачу \n2. Просмотреть текущие задачи \n3. Отметить задачу как выполненную \n4. Изменить задачу \n5. Удалить задачу \n6. Посмотреть выполненные задачи \n7. Посмотреть удаленные задачи \n8. Выйти\n");
             Console.ResetColor();
             
             int input = Convert.ToInt32(Console.ReadLine());
@@ -31,10 +31,11 @@ public class TaskManager
                 case 1: AddTaskFunction.AddTask(_tasks); break;
                 case 2: DisplayListsFunction.DisplayTasks(_tasks); break;
                 case 3: MarkTaskAsCompleteFunction.MarkTaskAsComplete(_tasks, _tasksAsCompleted); break;
-                case 4: DeleteTaskFunction.DeleteTask(_tasks, _tasksAsDeleted); break;
-                case 5: DisplayListsFunction.DisplayAsCompletedTasks(_tasksAsCompleted); break;
-                case 6: DisplayListsFunction.DisplayAsDeletedTasks(_tasksAsDeleted); break;
-                case 7: Console.ForegroundColor = ConsoleColor.Green;
+                case 4: EditTaskFunction.EditTask(_tasks); break;
+                case 5: DeleteTaskFunction.DeleteTask(_tasks, _tasksAsDeleted); break;
+                case 6: DisplayListsFunction.DisplayAsCompletedTasks(_tasksAsCompleted); break;
+                case 7: DisplayListsFunction.DisplayAsDeletedTasks(_tasksAsDeleted); break;
+                case 8: Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nСпасибо за использование Task Manager!");
                     Console.ResetColor(); return;
                 default: Console.ForegroundColor = ConsoleColor.Red;
