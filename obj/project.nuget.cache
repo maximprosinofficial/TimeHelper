@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kMVv6CLfQeE=",
+  "dgSpecHash": "qsp7ql7Zt8k=",
   "success": true,
   "projectFilePath": "C:\\Users\\Maxim Prosin\\Desktop\\projects\\TimeHelper\\TimeHelper.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Maxim Prosin\\.nuget\\packages\\consoletables\\2.6.2\\consoletables.2.6.2.nupkg.sha512",
+    "C:\\Users\\Maxim Prosin\\.nuget\\packages\\wcwidth\\1.0.0\\wcwidth.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
