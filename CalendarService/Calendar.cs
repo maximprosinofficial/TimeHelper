@@ -4,7 +4,7 @@ namespace TimeHelper.CalendarService;
 
 public class Calendar
 {
-    public static void CalendarLoad()
+    public static void Calendar_Load()
     {
         Console.Title = "Calendar | x1mhp.sys";
         Console.ForegroundColor = ConsoleColor.Green;
