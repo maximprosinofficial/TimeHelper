@@ -29,7 +29,12 @@ public class TaskManager
             switch (input)
             {
                 case 1: AddTaskFunction.AddTask(_tasks); break;
-                case 2: Console.ForegroundColor = ConsoleColor.Green;
+                case 2: DisplayListsFunction.DisplayTasks(_tasks); break;
+                case 3: MarkTaskAsCompleteFunction.MarkTaskAsComplete(_tasks, _tasksAsCompleted); break;
+                case 4: DeleteTaskFunction.DeleteTask(_tasks, _tasksAsDeleted); break;
+                case 5: DisplayListsFunction.DisplayAsCompletedTasks(_tasksAsCompleted); break;
+                case 6: DisplayListsFunction.DisplayAsDeletedTasks(_tasksAsDeleted); break;
+                case 7: Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nСпасибо за использование Task Manager!");
                     Console.ResetColor(); return;
                 default: Console.ForegroundColor = ConsoleColor.Red;

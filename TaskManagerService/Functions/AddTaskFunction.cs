@@ -1,6 +1,6 @@
 namespace TimeHelper.TaskManagerService.Functions;
 
-using TimeHelper.TaskManagerService.Models;
+using Models;
 
 public class AddTaskFunction
 {
