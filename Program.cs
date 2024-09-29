@@ -29,7 +29,7 @@ class Program
             switch (input)
             {
                 case 1: TaskManager.TaskManager_Load(); break;
-                case 2: CalendarService.Calendar_Load(); break;
+                case 2: Calendar.Calendar_Load(); break;
                 case 3: Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nСпасибо за использование Time Helper!");
                     Console.ResetColor();
